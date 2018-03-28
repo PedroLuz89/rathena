@@ -21,7 +21,8 @@ prontera,155,177,5	script	Card Seller	100,{
 		close;
 	}
 	mes "[Card Seller]";
-	mes "Welcome!";
+	mes "Fuck off card buying scum...";
+	close;
 	mes "I can sell you any normal monster card in the game. Would you like to have a look?";
 	next;
 	.@s = select(.@menu$) -1;

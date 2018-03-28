@@ -9984,7 +9984,8 @@ static bool clif_process_message(struct map_session_data* sd, bool whisperFormat
 		{
 			//Hacked message, or infamous "client desynch" issue where they pick one char while loading another.
 			ShowWarning("clif_process_message: Player '%s' sent a message using an incorrect name! Forcing a relog...\n", sd->status.name);
-			set_eof(sd->fd); // Just kick them out to correct it.
+			//set_eof(sd->fd); // Just kick them out to correct it.
+			//TODO: Log bot!!
 			return false;
 		}
 
